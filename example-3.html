@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <title>Bulma case study - example 3</title>
+    <style>
+    .top-title { top: 60px; }
+    .hero { background: black url(images/car_large.jpg) center / cover; }
+    @media (max-width: 900px) { 
+        .hero { background: black url(images/car_medium.jpg) center / cover; }
+        .top-title { top: 100px; }
+    }
+    @media (max-width: 540px) { 
+        .hero { background: black url(images/car_small.jpg) center / cover; }
+        .top-title { top: 120px; }
+    }
+    </style>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <nav class="hero-head">
+            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+                <div class="column left">
+                    <figure class="navbar-item image">
+                        <img src="images/porsche_logo.png" style="width: 10rem; height: 1rem">
+                    </figure>
+                </div>
+                <div class="column center desktop">
+                    <p class="navbar-item has-text-white">MODEL A</p>
+                    <p class="navbar-item has-text-white">MODEL B</p>
+                    <p class="navbar-item has-text-grey">MODEL C</p>
+                    <p class="navbar-item has-text-white">MODEL D</p>
+                </div>
+                <div class="column right">
+                    <p class="navbar-item has-text-white desktop">SHOP</p>
+                    <p class="navbar-item has-text-white desktop">SIGN IN</p>
+                    <figure class="navbar-item image has-text-white center">
+                        <img class="fas fa-bars" style="width: 1rem; height: 1rem;">
+                    </figure>
+                </div>
+            </div>
+        </nav>
+        <header class="hero-body">
+            <div class="is-overlay has-text-centered single-spaced top-title">
+                <h1 class="subtitle is-5">Porsche</h1>
+                <h2 class="title is-2">Taycan turbo S</h2>
+            </div>
+        </header>
+        <footer class="hero-foot center" style="padding: 2rem; background-color:rgba(0, 0, 0, 0.7);">
+            <div id="grid" style="width: 768px;">
+                <div class="has-text-white center-column" id="a">
+                    <p class="has-text-centered">Example car that is enough for this<br>project purpose</p>
+                </div>
+                <div class="has-text-white center-column" id="b">
+                    <p class="title has-text-white">
+                        <img class="fas fa-tachometer-alt has-text-grey-light " style="width: 0.75em; height: 0.75em;">
+                        1.9<span class="is-size-5">s</span>
+                    </p>
+                    <p class="subtitle has-text-white is-7">0-60 mph</p>
+                </div>
+                <div class="has-text-white center-column" id="c" style="border-left: 2px solid gray;">
+                    <p class="title has-text-white"><span class="is-size-5">+</span>250<span class="is-size-5">mph</span></p>
+                    <p class="subtitle has-text-white is-7">Top speed</p>
+                </div>
+                <div class="has-text-white center-column" id="d" style="border-left: 2px solid gray;">
+                    <p class="title has-text-white">620<span class="is-size-5">mi</span></p>
+                    <p class="subtitle has-text-white is-7">Mile range</p>
+                </div>
+                <div class="has-text-white center-column" id="e">
+                    <a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
